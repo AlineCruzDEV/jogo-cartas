@@ -10,10 +10,21 @@ public class Jogador {
 
     private Integer pontos;
 
-    public Jogador(List<Carta> deck, Integer vidas, Integer pontos) {
+    private String nome;
+
+    public Jogador(List<Carta> deck, Integer vidas, Integer pontos, String nome) {
         this.deck = deck;
         this.vidas = vidas;
         this.pontos = pontos;
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public List<Carta> getDeck() {
